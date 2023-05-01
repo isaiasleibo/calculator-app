@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { evaluate } from 'mathjs';
 import './css/app.css';
 import './css/theme1.css';
 import './css/theme2.css';
@@ -13,13 +14,14 @@ function App() {
     const handleInputChange = () => {
       setTheme(themeInput.current.value);
     };
-
-    themeInput.current.addEventListener("change", handleInputChange);
-
+  
+    const currentThemeInput = themeInput.current;
+    currentThemeInput.addEventListener("change", handleInputChange);
+  
     return () => {
-      themeInput.current.removeEventListener("change", handleInputChange);
+      currentThemeInput.removeEventListener("change", handleInputChange);
     };
-  }, []);
+  }, [themeInput]);
 
   const handleNumberClick = (value) => {
     const lastChar = currentOperation.slice(-1);
@@ -47,7 +49,7 @@ function App() {
     if (!lastChar.endsWith(" ") && currentOperation !== "") {
       let finalOperation = currentOperation;
       finalOperation = finalOperation.replace(/x/g, "*")
-      const result = eval(finalOperation);
+      const result = evaluate(finalOperation);
       setCurrentOperation(String(result));
     }
   };
