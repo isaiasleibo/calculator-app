@@ -1,0 +1,55 @@
+#calculatorSubContainer.theme3 {
+  background-color: #17062a;
+}
+#calculatorSubContainer.theme3 #calculatorContainer header h1 {
+  color: #fee43d;
+}
+#calculatorSubContainer.theme3 #calculatorContainer header #theme #rangeInput #themeTitle h3 {
+  color: #ecd573;
+}
+#calculatorSubContainer.theme3 #calculatorContainer header #theme #rangeInput #inputIndicators {
+  color: #ecd573;
+}
+#calculatorSubContainer.theme3 #calculatorContainer header #theme #rangeInput input {
+  background-color: #1e0836;
+}
+#calculatorSubContainer.theme3 #calculatorContainer header #theme #rangeInput input::-webkit-slider-thumb {
+  background-color: #00e1d2;
+}
+#calculatorSubContainer.theme3 #calculatorContainer header #theme #rangeInput input::-webkit-slider-thumb:focus,
+#calculatorSubContainer.theme3 #calculatorContainer header #theme #rangeInput input::-webkit-slider-thumb:active {
+  background-color: #97fdf7;
+}
+#calculatorSubContainer.theme3 #calculatorContainer #calculatorInput {
+  background-color: #1e0836;
+}
+#calculatorSubContainer.theme3 #calculatorContainer #calculatorInput h2 {
+  color: #fce03b;
+}
+#calculatorSubContainer.theme3 #calculatorContainer #calculatorNumbers {
+  background-color: #1e0836;
+}
+#calculatorSubContainer.theme3 #calculatorContainer #calculatorNumbers .classicNumber {
+  background-color: #331b4d;
+  color: #ffe73b;
+  border-bottom: 2px solid #7d2295;
+}
+#calculatorSubContainer.theme3 #calculatorContainer #calculatorNumbers .classicNumber:active {
+  background-color: #6b34ac;
+}
+#calculatorSubContainer.theme3 #calculatorContainer #calculatorNumbers .delOrReset {
+  background-color: #5a057f;
+  color: white;
+  border-bottom: 2px solid #bf15f4;
+}
+#calculatorSubContainer.theme3 #calculatorContainer #calculatorNumbers .delOrReset:active {
+  background-color: #8631b0;
+}
+#calculatorSubContainer.theme3 #calculatorContainer #calculatorNumbers .equal {
+  background-color: #00decf;
+  color: #052d34;
+  border-bottom: 2px solid #79d4dc;
+}
+#calculatorSubContainer.theme3 #calculatorContainer #calculatorNumbers .equal:active {
+  background-color: #94fff9;
+}

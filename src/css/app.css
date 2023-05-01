@@ -1,0 +1,150 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#calculatorSubContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+#calculatorSubContainer #calculatorContainer {
+  width: calc(100vw - 40px);
+  max-width: 400px;
+}
+#calculatorSubContainer #calculatorContainer h1 {
+  font-size: 32px;
+}
+#calculatorSubContainer #calculatorContainer header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#calculatorSubContainer #calculatorContainer header #theme {
+  height: fit-content;
+  display: flex;
+}
+#calculatorSubContainer #calculatorContainer header #theme #rangeInput {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+}
+#calculatorSubContainer #calculatorContainer header #theme #rangeInput #themeTitle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#calculatorSubContainer #calculatorContainer header #theme #rangeInput #themeTitle h3 {
+  font-size: 14px;
+  height: fit-content;
+}
+#calculatorSubContainer #calculatorContainer header #theme #rangeInput #inputIndicators {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  margin-bottom: 5px;
+  height: 13px;
+}
+#calculatorSubContainer #calculatorContainer header #theme #rangeInput #inputIndicators p {
+  width: fit-content;
+}
+#calculatorSubContainer #calculatorContainer header #theme #rangeInput input {
+  appearance: none;
+  width: 50px;
+  padding: 3px;
+  border-radius: 16px;
+  border: 0;
+  outline: 0;
+}
+#calculatorSubContainer #calculatorContainer header #theme #rangeInput input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+}
+#calculatorSubContainer #calculatorContainer #calculatorInput {
+  height: 100px;
+  margin-top: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: right;
+  border-radius: 7px;
+  position: relative;
+  overflow-x: hidden;
+}
+#calculatorSubContainer #calculatorContainer #calculatorInput #input {
+  margin-top: 5px;
+  z-index: 1;
+}
+#calculatorSubContainer #calculatorContainer #calculatorInput #input h2 {
+  white-space: nowrap;
+  font-size: 50px;
+}
+#calculatorSubContainer #calculatorContainer #calculatorNumbers {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  user-select: none;
+}
+#calculatorSubContainer #calculatorContainer #calculatorNumbers #topNumbers {
+  display: flex;
+  flex-wrap: wrap;
+}
+#calculatorSubContainer #calculatorContainer #calculatorNumbers #topNumbers div {
+  width: calc(25% - 16px);
+  height: 40px;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#calculatorSubContainer #calculatorContainer #calculatorNumbers #topNumbers div p {
+  margin-top: 3px;
+}
+#calculatorSubContainer #calculatorContainer #calculatorNumbers #bottomNumbers {
+  display: flex;
+}
+#calculatorSubContainer #calculatorContainer #calculatorNumbers #bottomNumbers div {
+  width: calc(50% - 16px);
+  margin: 8px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#calculatorSubContainer #calculatorContainer #calculatorNumbers #bottomNumbers div p {
+  margin-top: 3px;
+}
+@media screen and (max-width: 350px) {
+  #calculatorSubContainer #calculatorInput {
+    height: 80px !important;
+  }
+  #calculatorSubContainer #calculatorInput h2 {
+    font-size: 40px !important;
+  }
+  #calculatorSubContainer .delOrReset {
+    font-size: 20px !important;
+  }
+  #calculatorSubContainer #topNumbers div {
+    margin: 5px !important;
+    width: calc(25% - 10px) !important;
+    height: 50px !important;
+  }
+}

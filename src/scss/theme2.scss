@@ -1,0 +1,80 @@
+#calculatorSubContainer.theme2 {
+    background-color: #e6e6e6;
+
+    #calculatorContainer {
+        header {
+            h1 {
+                color: #35362e;
+            }
+
+            #theme {
+                #rangeInput {
+                    #themeTitle {
+                        h3  {
+                            color: #313130;
+                        }
+                    }
+
+                    #inputIndicators {
+                        color: #313130;
+                    }
+
+                    input {
+                        background-color: #d3cdcd;
+                    }
+
+                    input::-webkit-slider-thumb {
+                        background-color: #ca590c;
+                    }
+
+                    input::-webkit-slider-thumb:focus,
+                    input::-webkit-slider-thumb:active {
+                        background-color: #ff8932;
+                    }
+                }
+            }
+        }
+
+        #calculatorInput {
+            background-color: #eeeeee;
+
+            h2 {
+                color: #38382b;
+            }
+        }
+
+        #calculatorNumbers {
+            background-color: #d3cdcd;
+
+            .classicNumber {
+                background-color: #e5e4e0;
+                color: #35352c;
+                border-bottom: 2px solid #a59e92;
+            }
+
+            .classicNumber:active {
+                background-color: #ffffff;
+            }
+    
+            .delOrReset {
+                background-color: #388186;
+                color: white;
+                border-bottom: 2px solid #1d5d66;
+            }
+
+            .delOrReset:active {
+                background-color: #62b5bd;
+            }
+    
+            .equal {
+                background-color: #c85401;
+                color: white;
+                border-bottom: 2px solid #732a28;
+            }
+
+            .equal:active {
+                background-color: #ff8a38;
+            }
+        }
+    }
+}
